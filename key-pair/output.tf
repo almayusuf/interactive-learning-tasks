@@ -2,8 +2,7 @@ output "key_name" {
   value = aws_key_pair.ilearning-wordpress.key_name
 }
 
-
-output "id" {
+output "key_id" {
   value = aws_key_pair.ilearning-wordpress.id
 }
 
