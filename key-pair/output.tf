@@ -3,9 +3,9 @@ output "key_name" {
 }
 
 output "key_id" {
-  value = aws_key_pair.ilearning-wordpress.id
+  value = aws_key_pair.ilearning-wordpress.key_pair_id
 }
 
 output "region" {
-  value = "us-east-2" 
+  value = "${data.aws_region.current.name}"
 }
